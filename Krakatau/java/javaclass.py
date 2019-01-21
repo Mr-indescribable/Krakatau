@@ -45,7 +45,7 @@ def _getMethod(method, cb, forbidden_identifiers, skip_errors):
         import traceback
         message = traceback.format_exc()
         code_ast = javamethod.generateAST(method, None, forbidden_identifiers)
-        code_ast.comments.add(message)
+        #code_ast.comments.add(message)
         print message
         return code_ast
 
